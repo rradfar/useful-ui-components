@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Form validation</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-wrapper">
+            <form action="/" class="form text-center" id="form">
+              <header>Create an account</header>
+              <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" class="input" placeholder="Username" id="username">
+                <div class="invalid-feedback">Username is required.</div>
+              </div>
+
+              <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="input" placeholder="Email" id="email">
+                <div class="invalid-feedback">Email address is required.</div>
+              </div>
+
+              <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="input" placeholder="Password" id="password">
+                <div class="invalid-feedback">Password is required.</div>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="check_1" name="check_1">
+                  <small>I agree to the <a href="#">terms and conditions</a>.</small>
+                </label>
+                <div class="invalid-feedback">You must agree to our terms and conditions to create an account.</div>
+              </div>
+              <div id="error"></div>
+              <input type="submit" class="btn" value="Sign up">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
