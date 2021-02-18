@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+    integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>GSAP Landing Page</title>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <div class="strip"></div>
+      <div class="strip"></div>
+      <div class="strip"></div>
+    </div>
+    <div class="bg"></div>
+    <div class="top">
+      <div class="toggle open"><i class="fas fa-bars"></i></div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">work</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="content">
+      <p class="fade">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+      <h1 class="fade">caring for<br />nature</h1>
+      <input type="text" class="fade">
+      <button class="fade"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="social">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="toggle-menu">
+    <div class="row left"></div>
+    <div class="row right">
+      <div class="toggle close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="toggle-nav">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">work</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
